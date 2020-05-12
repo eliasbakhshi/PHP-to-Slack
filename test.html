@@ -1,0 +1,161 @@
+<?php ?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test one</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: #384047;
+            background-image: url("1.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 30px 15px;
+            background: #f4f7f8;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0 0 30px 0;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="email"],
+        input[type="number"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="time"],
+        input[type="url"],
+        textarea,
+        select {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            outline: 0;
+            padding: 15px;
+            width: 100%;
+            background-color: #e8eeef;
+            color: #8a97a0;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 4px 8px 0;
+        }
+
+        select {
+            padding: 6px;
+            height: 32px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 19px 39px 18px 39px;
+            color: #FFF;
+            background-color: #4bc970;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border-radius: 5px;
+            width: 40%;
+            border: 1px solid #3ac162;
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #91c99a;
+        }
+
+        fieldset {
+            margin-bottom: 30px;
+            width: 95%;
+            border: none;
+        }
+
+        legend {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+
+        .number {
+            background-color: #5fcf80;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-right: 4px;
+            line-height: 30px;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            border-radius: 100%;
+        }
+
+        @media screen and (min-width: 480px) {
+            form {
+
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body >
+<form action="index.php" name="form2" method="POST" id="form2">
+    <h1>Sign Up</h1>
+    <fieldset>
+        <legend><span class="number">1</span>Send Your info to chennel</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="monitor_description" id="name" value="server number 1">
+        <label for="state">state:</label>
+        <select id="state" name="state">
+            <option value="UP">UP</option>
+            <option value="DOWN">DOWN</option>
+        </select>
+<!--        <input type="text" name="state" id="state" value="UP">-->
+        <label for="organisation">organisation:</label>
+        <input type="text" name="organisation" id="organisation" value="Give me a company name">
+        <label for="duration">duration:</label>
+        <input type="text" name="duration" id="duration" value="" placeholder="Enter a time">
+    </fieldset>
+    <button type="submit" name="Irisett">Sign Up</button>
+</form>
+</body>
+</html>
